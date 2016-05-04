@@ -30,7 +30,7 @@ $('#spotify-button').click(function() {
   // Gör en request med jQuery med spotify API
   
   // Vi placerar det vi vår tillbaka i en variabel
-  var response_body = data;
+
   
   // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
   //
