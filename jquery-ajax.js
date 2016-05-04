@@ -6,13 +6,31 @@ $('#my-button').click(function() {
   console.log("knapped klickades")
   
   // Gör en GET request med AJAX i jQuery
-  $.get("http://swapi.co/api/planets/1/", function( data, textStatus, jqXHR) {
+  // Github zen api: https://api.github.com/zen
+  // Star wars api:"http://swapi.co/api/planets/1/"a
+  $.get("http://api.spotify.com/v1/users/hazmupp", function( data, textStatus, jqXHR) {
     // Vilken status
     console.log(textStatus);
     
     // Visa texten från servern i stycket <p> med id_t shw-server-tet
     $('#show-server-text').text(data); // # inte nådvändigt, men funkar att ha med om man vill
+    
+  }).fail(function(jqXHR, errorStatus, errorThrown){
+    console.log("Vår request gav fel")
+    
   })
+  
+  
    }
 );
 
+
+// Klicka på spotify-knappen
+$('#spotify-button').click(function() {
+  // Gör en request med jQuery med spotify API
+  $.get("http://api.spotify.com/v1/users/hazmupp", function(data, textStatus, jqXHR){
+    $('#spotify-response').text(data);
+    
+  })
+  
+});
