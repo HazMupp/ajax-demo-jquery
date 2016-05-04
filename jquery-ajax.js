@@ -8,7 +8,7 @@ $('#my-button').click(function() {
   // Gör en GET request med AJAX i jQuery
   $.get("http://swapi.co/api/starships/9/", function( data, textStatus, jqXHR) {
     // Vilken status
-    console.log(testStatus);
+    console.log(textStatus);
     
     // Visa texten från servern i stycket <p> med id_t shw-server-tet
     $('show-server-text').text(data); // # inte nådvändigt, men funkar att ha med om man vill
