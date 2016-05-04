@@ -36,7 +36,7 @@ $('#spotify-button').click(function() {
   //
   
   
-  $.get("http://api.spotify.com/v1/users/hazmupp", function(data, textStatus, jqXHR){
+  $.get("http://swapi.co/api/starships/9/", function(data, textStatus, jqXHR){
     
     var responseBody = data;
     
