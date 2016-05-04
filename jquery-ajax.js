@@ -32,16 +32,39 @@ $('#darth-vader-button').click(function() {
 
   // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
 
-  var starWarsUrl = "http://swapi.co/api/starships/9/";
+  var darthVaderUrl = "http://swapi.co/api/starships/9/";
   
-  $.get(starWarsUrl, function(data, textStatus, jqXHR){
+  $.get(darthVaderUrl, function(data, textStatus, jqXHR){
     
     var responseBody = data;
 
     
     //GET /api/starships/9/
     
-    $('#darth-vader-response').text(responseBody.name + ", " + responseBody.model + ", " + responseBody.manufacturer );
+    $('#darth-vader-response').text("Name: " + responseBody.name + ", Model: " + responseBody.model + ", Manufacturer: " + responseBody.manufacturer );
+    
+    
+  })
+  
+});
+
+$('#chewbacca-button').click(function() {
+  // Gör en request med jQuery med spotify API
+  // Vi placerar det vi vår tillbaka i en variabel
+
+  // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
+
+  var chewbaccaUrl = "http://swapi.co/api/starships/9/?format=wookiee";
+  
+  $.get(chewbaccaUrl, function(data, textStatus, jqXHR){
+    
+    var responseBody = data;
+
+    
+    //GET /api/starships/9/
+    
+    $('#chewbacca-response').text("Name: " + responseBody.whrascwo + ", Model: " + responseBody.scoowawoan + ", Manufacturer: " + responseBody.scrawhhuwwraoaaohurcworc );
+    
     
   })
   
