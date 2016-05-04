@@ -41,7 +41,7 @@ $('#spotify-button').click(function() {
     var responseBody = data;
     
     
-    $('#spotify-response').text(data);
+    $('#spotify-response').text(getJSONObject("name"));
     
   })
   
