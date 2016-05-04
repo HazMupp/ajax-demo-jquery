@@ -41,11 +41,10 @@ $('#star-wars-button').click(function() {
     
     var responseBody = data;
 
-    var deathStar = "http://swapi.co/api/starships/9/";
     
     //GET /api/starships/9/
     
-    $('#star-wars-response').text(deathStar.model);
+    $('#star-wars-response').text(model);
     
   })
   
