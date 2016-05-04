@@ -11,7 +11,7 @@ $('#my-button').click(function() {
     console.log(textStatus);
     
     // Visa texten från servern i stycket <p> med id_t shw-server-tet
-    $('show-server-text').text(data); // # inte nådvändigt, men funkar att ha med om man vill
+    $('#show-server-text').text(data); // # inte nådvändigt, men funkar att ha med om man vill
   })
    }
 );
