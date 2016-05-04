@@ -41,7 +41,7 @@ $('#star-wars-button').click(function() {
     
     var responseBody = data;
 
-    var deathStar = starWarsUrl;
+    var deathStar = $.getJSON(starWarsUrl, data, success);
     
     //GET /api/starships/9/
     
