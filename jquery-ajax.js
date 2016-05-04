@@ -28,7 +28,35 @@ $('#my-button').click(function() {
 // Klicka på spotify-knappen
 $('#spotify-button').click(function() {
   // Gör en request med jQuery med spotify API
+  
+  // Vi placerar det vi vår tillbaka i en variabel
+  var response_body = data;
+  
+  // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
+  //
+  
+  
   $.get("http://api.spotify.com/v1/users/hazmupp", function(data, textStatus, jqXHR){
+    
+    var test_object = {
+      {
+  "display_name" : null,
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/user/hazmupp"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/users/hazmupp",
+  "id" : "hazmupp",
+  "images" : [ ],
+  "type" : "user",
+  "uri" : "spotify:user:hazmupp"
+}
+    }
+    
+    
     $('#spotify-response').text(data);
     
   })
