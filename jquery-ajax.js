@@ -6,7 +6,7 @@ $('#my-button').click(function() {
   console.log("knapped klickades")
   
   // Gör en GET request med AJAX i jQuery
-  $.get("https://api.github.com/zen", function( data, textStatus, jqXHR) {
+  $.get("http://swapi.co/api/starships/9/", function( data, textStatus, jqXHR) {
     // Vilken status
     console.log(testStatus);
     
