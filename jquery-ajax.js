@@ -26,15 +26,12 @@ $('#my-button').click(function() {
 
 
 // Klicka på spotify-knappen
-$('#star-wars-button').click(function() {
+$('#darth-vader-button').click(function() {
   // Gör en request med jQuery med spotify API
-  
   // Vi placerar det vi vår tillbaka i en variabel
 
-  
   // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
-  //
-  
+
   var starWarsUrl = "http://swapi.co/api/starships/9/";
   
   $.get(starWarsUrl, function(data, textStatus, jqXHR){
@@ -44,7 +41,7 @@ $('#star-wars-button').click(function() {
     
     //GET /api/starships/9/
     
-    $('#star-wars-response').text(responseBody.model);
+    $('#darth-vader-response').text(responseBody.name, responseBody.model, responseBody.manufacturer );
     
   })
   
