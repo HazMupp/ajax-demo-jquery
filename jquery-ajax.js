@@ -44,7 +44,7 @@ $('#star-wars-button').click(function() {
     
     //GET /api/starships/9/
     
-    $('#star-wars-response').text(model);
+    $('#star-wars-response').text(responseBody.model);
     
   })
   
