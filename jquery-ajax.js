@@ -64,7 +64,7 @@ $('#spotify-button').click(function() {
     
     //GET /api/starships/9/
     
-    $('#spotify-response').text(deathstar.model);
+    $('#spotify-response').text(deathstar.manufacturer);
     
   })
   
