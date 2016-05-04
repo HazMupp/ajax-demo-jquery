@@ -39,7 +39,7 @@ $('#spotify-button').click(function() {
   $.get("http://api.spotify.com/v1/users/hazmupp", function(data, textStatus, jqXHR){
     
     var test_object = {
-      {
+      
   "display_name" : null,
   "external_urls" : {
     "spotify" : "https://open.spotify.com/user/hazmupp"
@@ -53,7 +53,7 @@ $('#spotify-button').click(function() {
   "images" : [ ],
   "type" : "user",
   "uri" : "spotify:user:hazmupp"
-}
+
     }
     
     
