@@ -41,7 +41,7 @@ $('#darth-vader-button').click(function() {
     
     //GET /api/starships/9/
     
-    $('#darth-vader-response').text(responseBody.name, responseBody.model, responseBody.manufacturer );
+    $('#darth-vader-response').text(responseBody.name + " " + responseBody.model + " " + responseBody.manufacturer );
     
   })
   
