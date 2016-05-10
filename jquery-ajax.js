@@ -35,6 +35,8 @@ $('#darth-vader-button').click(function() {
   var darthVaderUrl = "localhost:1337";
   
   $.get(darthVaderUrl, function(data, textStatus, jqXHR){
+    console.log(data);
+    console.log("Dart vader arrow")
     
     var responseBody = data;
 
