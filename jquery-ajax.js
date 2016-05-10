@@ -32,7 +32,7 @@ $('#darth-vader-button').click(function() {
 
   // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
 
-  var darthVaderUrl = "localhost/1337";
+  var darthVaderUrl = "31.211.200.227/1337";
   
   $.get(darthVaderUrl, function(data, textStatus, jqXHR){
     
