@@ -31,7 +31,7 @@ $('#darth-vader-button').click(function() {
   // Vi placerar det vi vår tillbaka i en variabel
 
   // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
-  response.setHeader("Content-type", "application/json");
+
   var darthVaderUrl = "localhost:1337";
   
   $.get(darthVaderUrl, function(data, textStatus, jqXHR){
