@@ -33,7 +33,7 @@ $('#darth-vader-button').click(function() {
   // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
 
   var darthVaderUrl = "localhost:1337";
-  
+  console.log("Lord something");
   $.get(darthVaderUrl, function(data, textStatus, jqXHR){
     console.log(data);
     console.log("Dart vader arrow")
