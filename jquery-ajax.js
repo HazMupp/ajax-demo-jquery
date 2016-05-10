@@ -32,9 +32,9 @@ $('#darth-vader-button').click(function() {
 
   // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
 
-//  var darthVaderUrl = "127.0.0.1";
+  var darthVaderUrl = "127.0.0.1/1337";
   
-  $.get(127.0.0.1/1337, function(data, textStatus, jqXHR){
+  $.get(darthVaderUrl, function(data, textStatus, jqXHR){
     
     var responseBody = data;
 
