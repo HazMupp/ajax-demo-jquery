@@ -32,7 +32,7 @@ $('#darth-vader-button').click(function() {
 
   // ... det vi fick tillbaka är väldigt likt objekt i JavaScript
 
-  var darthVaderUrl = "http://swapi.co/api/starships/9/";
+  var darthVaderUrl = "localhost/1337";
   
   $.get(darthVaderUrl, function(data, textStatus, jqXHR){
     
