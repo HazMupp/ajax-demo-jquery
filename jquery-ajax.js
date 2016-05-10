@@ -34,7 +34,7 @@ $('#darth-vader-button').click(function() {
 
 //  var darthVaderUrl = "127.0.0.1";
   
-  $.get("127.0.0.1/1337", function(data, textStatus, jqXHR){
+  $.get(127.0.0.1/1337, function(data, textStatus, jqXHR){
     
     var responseBody = data;
 
